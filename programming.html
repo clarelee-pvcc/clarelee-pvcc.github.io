@@ -1,0 +1,200 @@
+<! Programming  html>
+<html>
+<head>
+<style>
+
+body { 
+  background: lightblue url("bg.png") repeat fixed center;   color: #283618; font-size: 18px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; align-content: center;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Chapter 5: Porgramming Algorithms & Software testing</h1>
+
+<table id="algorithms">
+  <tr>
+    <th>Phases of computer program development: </th>
+  </tr>
+  </table>
+
+ <p>Phase 1: Understand the probelm </p>
+ <p>Phase 2: Design an algotithm to solve the problem </p>
+ <p>Phase 3: Write the progrma code i appropriate language nase on the algorithm</p>
+    <p>Phase 4: Enter the program and save</p>
+    <p>Phase 5: Execute the program </p>
+    <p>Phase 6: Test the program, find errors and debug, then retest </p>
+    <p>Phase 7: Document and evaluate the program</p>
+
+<table id="algorithms">
+  <tr>
+    <th>Programming Structures: </th>
+  </tr>
+  </table>
+
+
+<ul>
+  <li>Sequential Structure: Top-down execution</li>
+    <li>Decision structures: if/then/else</li>
+        <li>Iterative (looping):</li>
+    <ul>
+      <li>While loop: contiue looping as long somthing is true</li>
+      <li>repeat/unil loop: continue looping until something is true</li>
+         <li>For loop: loop a given number of times</li>
+    </ul>
+    <li>Recursive structures:</li>
+     <ul>
+      <li>Repeat aset of instructions as a subtask of itself</li>
+      <li>Repetition continues until: </li>
+      </ul>
+     	 <ol>
+      	<li>degenerative case, which is a termination condition, is met</li>
+      	<li>degenerative case is also called a "base case")</li>    
+    </ol>
+    <p> </p>
+    
+    
+<table id="algorithms">
+  <tr>
+    <th>Two classic programming/database problems </th>
+  </tr>
+  </table>
+      <li>Sorting: </li>
+ 		 <ul>
+      <li>sorting numbers</li>
+      <li>sorting strings (in accordance with ASCII values) </li>
+   			</ul>
+            
+              <li>Searching: find specific data that meet a certain criteria</li>
+              <p> In database: </p>
+              	 <ol>
+      	<li>Filters: temporary search</li>
+      	<li>Queries: search criteria are savesd so they don't have to be recreated</li>    
+    </ol>
+     	       <li>Two popular search techniques: </li>
+               	<p> Subsequntial search: search from top to bottom or bottom to top, one item at a time. </p>
+                <p> Binary search: </p>
+                <ol>
+      	<li>only works if data is SORTED first </li>
+      	<li>start in the middle, then go to half of that, etc.
+    </ol>
+
+    <table>
+    <caption>
+      
+    <th>Two classic programming goals</th>
+    </caption>
+</thead>
+<tbody>
+  <tr>
+    <th scope="row">Efficiency: Program takes minimal time and/or resources</th>
+
+  </tr>
+  <tr>
+    <th scope="row">Correctiveness: Program runs in expected ways and works for all expected conditions</th>
+</ol>
+<li>Software testing nd verification </li>
+   <p> Kinds of tests: </p> 
+   <table>
+    <tr> 
+      <td>Terms </td>
+      <td>Definition</td>
+
+    </tr>
+    <tr> 
+      <td>Acceptance testing:</td>
+      <td>Verifying whether the whole system works as intended.</td>
+      <tr> 
+        <td>Intergration testing: </td>
+        <td>Ensuring that software components or functions operate together.</td>
+  
+      </tr>
+      <tr> 
+        <td>Unit testing: </td>
+        <td>Validating that each software unit runs as expected. A unit is the smallest testable component of an application.</td>
+  
+      </tr>
+      <tr> 
+        <td>Functional testing: </td>
+        <td> Checking functions by emulating business scenarios, based on functional requirements. Black-box testing is a common way to verify functions.</td>
+  
+      </tr>
+      <tr> 
+        <td>Performance testing: </td>
+        <td>Testing how the software runs under different workloads. Load testing, for example, is used to evaluate performance under real-life load conditions.</td>
+  
+      </tr>
+      <tr> 
+        <td>Regression  testing: </td>
+        <td> Checking whether new features break or degrade functionality. Sanity testing can be used to verify menus, functions and commands at the surface level, when there is no time for a full regression test.</td>
+  
+      </tr>
+      <tr> 
+        <td>Stress testing: </td>
+        <td>Testing how much strain the system can take before it fails. Stress testing is considered to be a type of non-functional testing.</td>
+      </tr>
+    <tr>
+        <td> Usability  Testing: </td>
+        <td> Validating how well a customer can use a system or web application to complete a task.</td>
+      </tr>      
+
+        <tr> 
+            <td>Software testing is done to detect : </td>
+            <td></td>
+            </tr>
+            <tr> 
+                <td>Architectural flaws </td>
+                <td></td>
+                </tr>
+                <tr> 
+                    <td>Invalid or incorrect functionality </td>
+                    <td></td>
+                    </tr>
+                    <tr> 
+                        <td>poor design decision task. </td>
+                        <td></td>
+                        </tr>
+            <tr> 
+                <td>Security vulnerabilities </td>
+            
+                </tr>
+                <tr> 
+                    <td>poor design decision task. </td>
+
+               <tr> 
+               <td>Scalability issues</td>
+               <td></td>
+              </tr> 
+              <tr> 
+                <td>Testing best practices:</td>
+                <td> Project teams test each build as it becomes available. This type of software testing relies on test automation that is integrated with the deployment process. It enables software to be validated in realistic test environments earlier in the process, which improves design and reduces risks.</td>
+               </tr> 
+               <tr> 
+                <td>Configuration management</td>
+                <td> Organizations centrally maintain test assets and track what software builds to test. Teams gain access to assets such as code, requirements, design documents, models, test scripts and test results.</td>
+               </tr> 
+               <tr> 
+                <td>Service virtualization</td>
+                <td>Testing environments might not be available, especially early in code development. Service virtualization simulates the services and systems that are missing or not yet completed, enabling teams to reduce dependencies and test sooner. </td>
+               </tr>     
+                <tr> 
+                <td>Defect or bug tracking</td>
+                <td>Monitoring defects is important to both testing and development teams for measuring and improving quality. Automated tools allow teams to track defects, measure their scope and impact, and uncover related issues.</td>
+               </tr> 
+               <tr> 
+                <td>Metrics and reporting</td>
+                <td>Reporting and analytics enable team members to share status, goals and test results. Advanced tools integrate project metrics and present results in a dashboard. Teams quickly see the overall health of a project and can monitor relationships between test, development and other project elements.</td>
+               </tr> 
+               <tr> 
+                <td> <a href="https://www.ibm.com/topics/software-testing" >From: IBM What is software testing?</a>
+                
+               </tr> 
+  </table>
+    
+
+      
+
+  </table>
+</body>
+</html>
