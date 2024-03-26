@@ -11,6 +11,29 @@
         a:hover {color:#f90b6e}
         a:active {color:#ffffff}
         tr:hover {background-color:#ffa07a}
+        #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-style: #004777; 
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+#customers tr:nth-child(even){background-color: #FF7700;}
+
+#customers tr:hover {background-color: #EFD28D;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00AFB5;
+  color: white;
+}
     </style>
     </head>
 <body style = "background: linear-gradient(90deg, #efd5ff 0%, #54432d 100%);;} ;font-family: Comic Sans MS, Comic Sans, cursive; background-image: url(wp-balloon.jpg) "; opacity: 0.9>
@@ -22,108 +45,107 @@
             <td><a href="contactus.html"> Contact Us </a></td>
     </tr>
     </table>
-    <table class="center"; border="1" style ="width:60%; color:#476C9B; background-color: #ebe0d4; margin: auto; text-align:center">
-        <tr style="font-size: 22px; margin: auto; text-align: center;">
-            <td>Ch.4 Terms:</td>
 
-<ul><td> 
-  <li>Network Classifications</li>
-   <ul>
-     	<li>LAN</li>
-        <li>MAN</li>
-        <li>WAN</li>
-   </ul>
-    <li>Network models </li>
-    <ul>
-      <li>bus network</li>
-      <li>star networks</li>
-    </ul>
-  </li>
-    <li>Protocols </li>
-    <ul>
-      <li>CSMA/CD Ethernet</li>
-      <li>CSMA/CA Wifi</li>
-    </ul>
-  </li>
-  <li>Combining networks</li>
-      <ul>
-      <li>repeater</li>
-      <li>bridge</li>
-  		<li>switch</li>
-      <li>router</li>
-       <li>gateway</li>
-    
-    </ul>
-
-    <li>Client/server model </li>
-    <ul>
-      <li>P2P: peer to peer</li>
-       <li>distributed system</li>
-      <li>cloud computing</li>
-    </ul>
-    
-    <li>Internet Addressing</li>
-    <ul>
-    	<li>Tier 1</li>
-        <li>Tier 2</li>
-        <li>Tier 3</li>
-    
-    </ul>
-        <li>IP address</li>
-    <ul>
-    	<li><a href="https://www.icann.org" target="_blank">ICANN</a> </li>
-        <li>DNS</li>
-        <li>TLD: Top-Level domain</li>
-        <li><a href="https://www.worldstandards.eu/other/tlds" target="_blank">Country- code TLDs</a>  </li>
-    </ul>
-        <li>Internet Protocols</li>
-    <ul>
-    	<li>FTP</li>
-        <li>HTTP</li>
-        <li>SMTP</li>
-    
-    </ul>
-        <li>World Wide Web</li>
-    <ul>
-    	<li>URL</li>
-        <li>Client-side activities</li>
-        <li>Server-side activities</li>
-    
-    </ul>
-        <li>Internet four layer software</li>
-    <ul>
-    	<li>application layer</li>
-        <li>transport layer</li>
-        <li>network layer</li>
-        <li>link layer</li>
-    </ul>
-        <li>Internet is:</li>
-    <ul>
-    	<li>packet-switching Networking</li>
-        <li>fault tolerant</li>
-        <li>redundant</li>
-    
-    </ul>
-        <li>Cybersecurity</li>
-    <ul>
-    	<li>malware</li>
-        <li>virus</li>
-        <li>worm</li>
-        <li>Trojan horse</li>
-        <li>spyware</li>
-        <li>phishing</li>
-        <li>DDos attack</li>
-    </ul>
-        <li>Protection</li>
-        <ul>
-            <li>firewall</li>
-            <li>spam filter</li>
-            <li>proxy server</li>
-            <li>antivirus software</li>    
-            <li>cryptography</li>   
-            <li>public key encryption</li>
+      
+      <h1>Ch.4 Terms:</h1>
+      
+      <table id="customers">
+        <tr>
+          <th>Terms</th>
+          <th>Definition</th>
+      
+        </tr>
+        <tr>
+          <td>LAN</td>
+          <td>A local area network that normally consists of a collection of computers in a single building or building complex.</td>
+        </tr>
+        <tr>
+          <td>MAN</td>
+          <td>A metropolitan area network is a network of intermediate size, such as one spanning a local community.
+      </td>
+      
+        </tr>
+        <tr>
+          <td>WAN</td>
+          <td>A wide area network that links machines over a greater distance like neighboring cities or opposite sides of the world.</td>
+                <tr><ul><p>Network Models</p></ul>  </tr>
+        </tr>
+        <tr>
+          <td>Bus network</td>
+          <td>A topology in which the machines are all connected to a common communication line called a bus.
+      </td>
+      
+        </tr>
+        <tr>
+          <td>CSMA/CD Ethernet</td>
+          <td> Carrier Sense, Multiple Access with Collision Detection is the protocol that controls the right to transmit messages and dictates each message be broadcast to all the machines on the bus.
+      </td>
+      
+        </tr>
+        <tr>
+          <td>CSMA/CD WIFI</td>
+          <td>Carrier Sense, Multiple Access with Collision Avoidance is usually standardized by IEEE within the protocols of IEEE 802.11, commonly referred to as Wi-Fi, and is the protocol designed to avoid collisions but may not eliminate them completely.
+      </td>
+      
+        </tr>
+        <tr>
+          <td>Repeat</td>
+          <td>A device that passes signals back and forth between the two original buses, usually with some form of amplification, without considering the meaning of the signals.
+      </td>
+      
+        </tr>
+        <tr>
+          <td>Bridge</td>
+          <td>A device that connects two buses and allows the two machines residing on the same side of the bridge to exchange messages without interfering with communications taking place on the other side.
+      </td>
+      
+        </tr>
+        <tr>
+          <td>Switch</td>
+          <td>A device that produces a network consisting of several buses extending from the switch.
+      </td>
+      
+        </tr>
+        <tr>
+          <td>Router</td>
+          <td>A device which is a special purpose computer used for forwarding messages.
+      gateway - The "point" at which one network is linked to an internet. It serves as a passageway between the network and the outside world.
+      </td>
+      
+          
+       <tr>
+          <td>P2P- Peer to Peer</td>
+          <td>A client/server model that involves one process (the server) providing a service to numerous others (clients). The peer-to-peer model involves processes that provide service to and receive service from each other.
+      
+      </td>
+       <tr>
+          <td>Internet addressing- tier 1</td>
+          <td>ISPs that consist of very high-speed, high-capacity, international WANs. They are considered the backbone of the Internet.
+      
+      </td>
+       <tr>
+          <td>Tier 2</td>
+          <td>ISPs connect to tier 1 ISPs and tend to be more regional in scope and less potent in their capabilities. Tier-1 and tier-2 ISPs are essentially networks of routers
+      
+      </td>
+       <tr>
+          <td>Tier 3</td>
+          <td>ISPs provide access to the most or all of the network that remains connected even when very important tier-1 routers fail.
+      </td>
+      </tr>
+          <tr>
+          <td><a href="https://www.icann.org" target="_blank">ICANN</a></td>
+          <td>Internet Corporation for Assigned Names and Numbers is a nonprofit corporation established to coordinate the Internet's operation and is responsible for awarding blocks of consecutively numbered IP addresses to ISPs.
+      </td>
+      
+        </tr>
+      
+      <tr>
+      
+      <td><a href="https://www.worldstandards.eu/other/tlds" target="_blank">Country- code TLDs</a> </td>
+      <td>Top-level domains are the suffixes used to reflect a domain's classification. These include .edu for educational, .com for commercial institutions, .gov for U.S. government institutions, .org for nonprofit organizations, .mil for military</td>
+      </tr>
         
-        </ul>
         </tr> 
     </td>
     </table>
