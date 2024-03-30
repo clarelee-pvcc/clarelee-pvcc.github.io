@@ -48,12 +48,23 @@ def perform_calculations():
 
         if inout == 1:
             tuition = numcredits * RATE_TUITION_IN
-            cap_fee = 0
+            cap_fee = numcredits * RATE_CAPITAL_FEE
+            act_fee = numcredits * RATE_ACTIVITY_FEE
+            inst_fee = numcredits * RATE_INSTITUTION_FEE
+            total = tuition + cap_fee + act_fee + inst_fee
+            balance = total - scholarship_amt
+            
+
+            
         else:
             tuition = numcredits * RATE_TUITION_OUT
             cap_fee = numcredits * RATE_CAPITAL_FEE
+            act_fee = numcredits * RATE_ACTIVITY_FEE
+            inst_fee = numcredits * RATE_INSTITUTION_FEE
+            total = tuition + cap_fee + act_fee + inst_fee
+            balance = total - scholarship_amt
 
-        inst_fee = RATE_INSTITUTION_FEE
+        inst_fee = RATE_INSTITUTION_FEE * numcredits
     # calculations for the other fees, total, and balance go here
 
 def display_results():
@@ -62,13 +73,17 @@ def display_results():
 
     print('----------------------------------')
     print('******** PIEDMONT VIRGINIA COMMUNITY COLLEGE ********')
-    print('--------------------------------')
-    print('------  Tuition and Fees Report -----')
+    print('-----------------------------------------------------')
+    print('--------------  Tuition and Fees Report -------------')
     print(line)
     print(line)
     print('Tuition                 $ ' + format(tuition,currency))
     print('Capital Fee             $ ' + format(cap_fee,currency))
-    print('---------------------')
+    print('Activity fee            $ ' + format(act_fee,currency))
+    print('Total tuition and fees  $ ' + format(total,currency))
+    print('Balance                 $ ' + format(balance,currency))
+    
+    print('--------------------------------------------------------')
     print(str(datetime.datetime.now()))
 
 #print statements for the other fees, total, and balance go here.
