@@ -37,7 +37,7 @@ def main():
             print("Thank you for enrollng at PVCC. Enjoy the semester!")
 
 def get_user_data():
-    global inout, numcredits, scholarshipamt
+    global inout, numcredits, scholarship_amt
     print('********PIEDMONT VIRGINIA COMMUNITY COLLEGE Tuition & Fees *********')
     inout = int(input("Enter a 1 for IN-STATE ; enter a 2 for OUT-OF-STATE: "))
     numcredits = int(input("Number of credits registered  for: "))
@@ -48,42 +48,36 @@ def perform_calculations():
 
         if inout == 1:
             tuition = numcredits * RATE_TUITION_IN
-            cap_fee = numcredits * RATE_CAPITAL_FEE
-            act_fee = numcredits * RATE_ACTIVITY_FEE
-            inst_fee = numcredits * RATE_INSTITUTION_FEE
-            total = tuition + cap_fee + act_fee + inst_fee
-            balance = total - scholarship_amt
-            
-
-            
+            cap_fee = 0
         else:
             tuition = numcredits * RATE_TUITION_OUT
             cap_fee = numcredits * RATE_CAPITAL_FEE
-            act_fee = numcredits * RATE_ACTIVITY_FEE
             inst_fee = numcredits * RATE_INSTITUTION_FEE
-            total = tuition + cap_fee + act_fee + inst_fee
+            act_fee = numcredits * RATE_ACTIVITY_FEE
+            total = tuition + inst_fee + cap_fee + act_fee
             balance = total - scholarship_amt
 
-        inst_fee = RATE_INSTITUTION_FEE * numcredits
+        inst_fee = RATE_INSTITUTION_FEE
     # calculations for the other fees, total, and balance go here
 
 def display_results():
     currency = '8,.2f'
     line = '-------------------------------------------------'
 
-    print('----------------------------------')
+    print('-----------------------------------------------------')
     print('******** PIEDMONT VIRGINIA COMMUNITY COLLEGE ********')
     print('-----------------------------------------------------')
-    print('--------------  Tuition and Fees Report -------------')
+    print('-----------------  Tuition and Fees Report ----------')
     print(line)
     print(line)
     print('Tuition                 $ ' + format(tuition,currency))
     print('Capital Fee             $ ' + format(cap_fee,currency))
-    print('Activity fee            $ ' + format(act_fee,currency))
-    print('Total tuition and fees  $ ' + format(total,currency))
+    print('Institution Fee         $ ' + format(inst_fee,currency))
+    print('Activity Fee            $ ' + format(act_fee,currency))
+    print('Total                   $ ' + format(total,currency))
+    print('Scholarship             $ ' + format(scholarship_amt,currency))
     print('Balance                 $ ' + format(balance,currency))
-    
-    print('--------------------------------------------------------')
+    print('------------------   --------------------------------')
     print(str(datetime.datetime.now()))
 
 #print statements for the other fees, total, and balance go here.
