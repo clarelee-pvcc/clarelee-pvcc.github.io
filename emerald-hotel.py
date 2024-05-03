@@ -83,11 +83,11 @@ def create_output_html():
     tr = '<tr><td>'
     td = '</td><td>'
     endtr = '</td></tr>\n'
-
+    f.write('table')
     f.write('\n<table border="5"   style ="background-color: #54494B;  font-family: Droid Serif ; margin: auto;">\n')            
     f.write(colsp + '\n')
     f.write('<h2>Emerald Beach Hotel</h2></td></tr>')
-    f.write(colsp + '\n')
+
     f.write('*** Resort Guest Report ***\n')
 
     for i in range(len(guest)):
